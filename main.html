@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="wrapper__container">
+        
+        <header class="header flex-row ">
+            <div class="header__logo-block" onclick="window.location.href='#'">
+                <img src="img/logo.png" alt="logotype">
+            </div>
+
+            <div class="icons-block flex-row">
+                <div class="icons-block__item">
+                    <a href="#" class="icons-block__link">
+                        <i class="fas fa-shopping-basket"></i>
+                    </a>
+                </div>
+                <div class="icons-block__item">
+                    <a href="#" class="icons-block__link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                <div class="icons-block__item">
+                    <a href="#" class="icons-block__link">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </a>
+                </div>
+                <div class="icons-block__item">
+                    <a href="#" class="icons-block__link">
+                        <i class="fas fa-user-tie"></i>
+                    </a>
+                </div>                    
+            </div>
+
+            <div class="header__search-block flex-row">   
+                <input class="header__search-field" type="text" placeholder="What do you want to find?">
+                <button class="btn header__search-btn">
+                    <i class="fas fa-search"></i>
+                </button>      
+            </div> 
+        </header>
+
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Tyres</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Cars</a>
+            </li>
+            <li class="breadcrumbs__item">Winter tyres</li>
+        </ul>
+
+        <main class="main">
+
+            <div class="filter-block">
+                <h3>Selected filters:</h3>
+                <div class="filter-block__wrapper flex-row">
+                    <div class="filter-block__item">
+                        <span>Vehicle type</span>
+                        <select class="input-field--regular">
+                            <option selected value="Car">Cars</option>
+                            <option value="Motorcycle">Motorcycle</option>
+                            <option disabled>Truck</option>
+                            <option value="Offroad">Offroad</option>
+                            <option value="Speciality tyres">Speciality tyres</option>
+                        </select>   
+                    </div>
+                    <div class="filter-block__item"> 
+                        <span>Tyre type</span>
+                        <select class="input-field--regular">
+                            <option selected value="Winter tyres">Winter tyres</option>
+                            <option value="Summer tyres">Summer tyres</option>
+                            <option value="All-season tyres">All-season tyres</option>
+                        </select> 
+                    </div>
+                    <div class="filter-block__item"> 
+                        <span>Width</span>
+                        <select class="input-field--shorter">
+                            <option selected value="225">225</option>
+                            <option value="215">215</option>
+                            <option value="205">205</option>
+                            <option value="195">195</option>
+                            <option value="185">185</option>
+                        </select> 
+                    </div>
+                    <div class="filter-block__item"> 
+                        <span>Height</span>
+                        <select class="input-field--shorter">
+                            <option selected value="50">50</option>
+                            <option value="45">45</option>
+                            <option value="40">40</option>
+                            <option value="35">35</option>
+                            <option value="30">30</option>
+                        </select> 
+                    </div>
+                    <div class="filter-block__item"> 
+                        <span>Diameter</span>
+                        <select class="input-field--shorter">
+                            <option selected value="20">20</option>
+                            <option value="19">19</option>
+                            <option value="18">18</option>
+                            <option value="17">17</option>
+                            <option value="16">16</option>
+                        </select> 
+                    </div>
+                    <button class="btn filter-block__btn">
+                        Search
+                    </button> 
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</div>
+    
+</body>
+</html>
