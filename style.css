@@ -28,6 +28,10 @@ ul {
   list-style: none;
 }
 
+li {
+  margin-top: 1rem;
+}
+
 input, select, button {
   color: #333333;
   border: none;
@@ -236,6 +240,10 @@ input, select, button {
   cursor: pointer;
 }
 
+.filter-label {
+  margin-top: 1rem;
+}
+
 .submenu {
   max-height: 0;
   overflow: hidden;
@@ -243,7 +251,8 @@ input, select, button {
   transition: all 0.3s ease-in-out;
 }
 
-.filters-list li ul {
-  margin: 0;
+.filter-list li ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

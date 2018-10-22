@@ -50,6 +50,10 @@ ul {
   list-style: none;
 }
 
+li {
+  margin-top: 1rem;
+}
+
 input, select, button {
   color: $color-dark-gray; 
   border: none;
@@ -221,9 +225,10 @@ input, select, button {
 
 }
 
-.aside-left {
-
-  
+.filter {
+  &-label {
+    margin-top: 1rem;
+  }
 }
 
 .submenu {
@@ -232,6 +237,7 @@ input, select, button {
   transition: $links;
 }
 
-.filters-list li ul {
-   margin: 0;
+.filter-list li ul {
+   margin-top: 0;
+   margin-bottom: 0;
 }
