@@ -12,7 +12,7 @@ $color-white: #fff;
 $size-icon: 2rem;
 
 // ANIMATIONS
-$links: all 0.3s;
+$links: all 0.3s ease-in-out;
 
 // MIXINS
 @mixin filter-field ($width-field) {
@@ -40,6 +40,10 @@ body {
   
 a {
   text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
   
 ul {
@@ -215,4 +219,19 @@ input, select, button {
     }
   }  
 
+}
+
+.aside-left {
+
+  
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: $links;
+}
+
+.filters-list li ul {
+   margin: 0;
 }
