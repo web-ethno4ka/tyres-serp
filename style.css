@@ -240,19 +240,31 @@ input, select, button {
   cursor: pointer;
 }
 
-.filter-label {
-  margin-top: 1rem;
+.aside-filter {
+  max-width: 30rem;
+  font-size: 1.6rem;
 }
 
-.submenu {
+.aside-filter__category {
+  font-weight: 400;
+}
+
+.aside-filter__submenu {
+  margin: 0 0 0 1rem;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.filter-list li ul {
-  margin-top: 0;
-  margin-bottom: 0;
+.input-field--shortest {
+  width: 7rem;
+  height: 3.8rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.input-field--shortest:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

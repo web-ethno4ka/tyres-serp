@@ -225,19 +225,37 @@ input, select, button {
 
 }
 
-.filter {
-  &-label {
-    margin-top: 1rem;
+.aside-filter {
+  max-width: 30rem;
+  font-size: 1.6rem;
+
+  &__category {
+    font-weight: 400;
+  }
+
+  &__submenu {
+    margin: 0 0 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: $links;
   }
 }
 
-.submenu {
-  max-height: 0;
-  overflow: hidden;
-  transition: $links;
+.input-field--shortest {
+  @include filter-field(7rem);
+  margin-top: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.filter-list li ul {
-   margin-top: 0;
-   margin-bottom: 0;
-}
+
+
+
+
+
+
+// .filter-list li ul {
+//    margin-top: 0;
+//    margin-bottom: 0;
+// }

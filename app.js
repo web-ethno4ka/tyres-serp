@@ -1,4 +1,4 @@
-const accordions = document.getElementsByClassName('has-submenu');
+const accordions = document.getElementsByClassName('aside-filter__category');
 
 for (var i = 0; 1 < accordions.length; i++) {
     accordions[i].onclick = function () {
