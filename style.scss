@@ -231,6 +231,7 @@ input, select, button {
   &__btn {
     @include btn($color-blue);
     margin-bottom: 0;
+  }
 }
 
 .sidebar-filter {
@@ -238,7 +239,7 @@ input, select, button {
   font-size: 1.6rem;
 
   &__btn {
-    @include btn($color-dark-gray);
+    @include btn($color-gray);
     min-width: 20rem;
   }
 
@@ -261,14 +262,3 @@ input, select, button {
     cursor: pointer;
   }
 }
-
-
-
-
-
-
-
-// .filter-list li ul {
-//    margin-top: 0;
-//    margin-bottom: 0;
-// }

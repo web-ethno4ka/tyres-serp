@@ -233,15 +233,15 @@ input, select, button {
 .filter-block__btn {
   width: 28rem;
   height: 3.8rem;
-  margin-bottom: 0;
   color: #fff;
   background: #0055a0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 0;
 }
 
 .filter-block__btn:hover {
-  background: #0163b9;
+  background: #0070d3;
   cursor: pointer;
 }
 
@@ -252,8 +252,17 @@ input, select, button {
 
 .sidebar-filter__btn {
   width: 28rem;
-  min-width: 20rem;
   height: 3.8rem;
+  color: #fff;
+  background: #ababab;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  min-width: 20rem;
+}
+
+.sidebar-filter__btn:hover {
+  background: #c5c5c5;
+  cursor: pointer;
 }
 
 .sidebar-filter__category {
