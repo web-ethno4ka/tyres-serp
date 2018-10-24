@@ -16,6 +16,10 @@ body {
   color: #333333;
 }
 
+h1 {
+  margin: 3rem 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -154,7 +158,7 @@ input, select, button {
 }
 
 .breadcrumbs__item + .breadcrumbs__item:before {
-  padding: .8rem;
+  padding: 0.8rem;
   content: "\003e";
   color: #0055a0;
 }
@@ -202,7 +206,7 @@ input, select, button {
 }
 
 .filter-block__item .input-field--regular {
-  width: 24rem;
+  width: 20rem;
   height: 3.8rem;
   padding: 0 1rem;
 }
@@ -215,18 +219,19 @@ input, select, button {
   width: 10rem;
   height: 3.8rem;
   padding: 0 1rem;
+  min-width: 6rem;
 }
 
 .filter-block__item .input-field--shorter:hover {
   cursor: pointer;
 }
 
-.filter-block__item > span {
+.filter-block__item > label {
   padding-bottom: 1rem;
 }
 
 .filter-block__btn {
-  width: 20rem;
+  width: 28rem;
   height: 3.8rem;
   margin-bottom: 0;
   color: #fff;
@@ -240,16 +245,22 @@ input, select, button {
   cursor: pointer;
 }
 
-.aside-filter {
+.sidebar-filter {
   max-width: 30rem;
   font-size: 1.6rem;
 }
 
-.aside-filter__category {
+.sidebar-filter__btn {
+  width: 28rem;
+  min-width: 20rem;
+  height: 3.8rem;
+}
+
+.sidebar-filter__category {
   font-weight: 400;
 }
 
-.aside-filter__submenu {
+.sidebar-filter__submenu {
   margin: 0 0 0 1rem;
   max-height: 0;
   overflow: hidden;
