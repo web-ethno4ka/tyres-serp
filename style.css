@@ -24,10 +24,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 ul {
   list-style: none;
 }
@@ -40,6 +36,12 @@ input, select, button {
   color: #333333;
   border: none;
   outline: none;
+}
+
+a:hover,
+button:hover,
+select:hover {
+  cursor: pointer;
 }
 
 .flex-row {
@@ -206,28 +208,17 @@ input, select, button {
 }
 
 .filter-block__item .input-field--regular {
-  width: 20rem;
+  width: 25rem;
   height: 3.8rem;
   padding: 0 1rem;
-}
-
-.filter-block__item .input-field--regular:hover {
-  cursor: pointer;
+  margin-top: 1rem;
 }
 
 .filter-block__item .input-field--shorter {
   width: 10rem;
   height: 3.8rem;
   padding: 0 1rem;
-  min-width: 6rem;
-}
-
-.filter-block__item .input-field--shorter:hover {
-  cursor: pointer;
-}
-
-.filter-block__item > label {
-  padding-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .filter-block__btn {
@@ -241,7 +232,7 @@ input, select, button {
 }
 
 .filter-block__btn:hover {
-  background: #0070d3;
+  background: #006bc9;
   cursor: pointer;
 }
 
@@ -261,7 +252,7 @@ input, select, button {
 }
 
 .sidebar-filter__btn:hover {
-  background: #c5c5c5;
+  background: #bfbfbf;
   cursor: pointer;
 }
 
@@ -277,6 +268,18 @@ input, select, button {
   transition: all 0.3s ease-in-out;
 }
 
+.sidebar-filter__index-parameter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0;
+  margin-top: 1rem;
+}
+
 .input-field--shortest {
   width: 7rem;
   height: 3.8rem;
@@ -284,7 +287,10 @@ input, select, button {
   margin-top: 1rem;
 }
 
-.input-field--shortest:hover {
-  cursor: pointer;
+.input-field--regular {
+  width: 25rem;
+  height: 3.8rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
