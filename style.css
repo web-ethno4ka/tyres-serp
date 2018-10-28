@@ -414,11 +414,12 @@ input[type="checkbox"]:checked:after {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  padding: 2rem 0;
   background: #f8f8f8;
 }
 
 .cards-block__images {
-  width: 12rem;
+  width: 14rem;
 }
 
 .cards-block__photo {
@@ -456,5 +457,22 @@ input[type="checkbox"]:checked:after {
 
 .cards-block__item a {
   color: #0055a0;
+}
+
+.tyre-characteristics {
+  margin-top: 2rem;
+}
+
+.tyre-characteristics__link {
+  display: inline-block;
+  margin: 0 2rem;
+  position: relative;
+}
+
+.tyre-characteristics__link::before {
+  content: url("img/close.svg");
+  position: absolute;
+  width: 1.5rem;
+  left: -2rem;
 }
 /*# sourceMappingURL=style.css.map */

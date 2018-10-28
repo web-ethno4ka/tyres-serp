@@ -372,10 +372,11 @@ input[type="checkbox"]:checked:after {
 .cards-block {
   justify-content: space-around;
   width: 100%;
+  padding: 2rem 0;
   background: $color-light-gray;
 
   &__images {
-    width: 12rem;
+    width: 14rem;
   }
 
   &__photo {  
@@ -401,5 +402,21 @@ input[type="checkbox"]:checked:after {
     a {
       color: $color-blue; // doesn't work in "&__item" block 
     }
+  }
+}
+
+.tyre-characteristics {
+  margin-top: 2rem;
+  &__link {
+    display: inline-block;
+    margin: 0 2rem;
+    position: relative;
+  }
+
+  &__link::before {
+    content: url('img/close.svg');
+    position: absolute;
+    width: 1.5rem;
+    left: -2rem;
   }
 }
