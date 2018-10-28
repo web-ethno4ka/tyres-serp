@@ -54,7 +54,7 @@ html {
   
 body {
   width: 100%;
-  font: 200 1.4rem Proxima Nova, sans-serif;
+  font: 300 1.4rem Proxima Nova, sans-serif;
   color: $color-dark-gray;
 }
 
@@ -370,6 +370,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .cards-block {
+  justify-content: space-around;
   width: 100%;
   background: $color-light-gray;
 
@@ -383,5 +384,22 @@ input[type="checkbox"]:checked:after {
 
   &__logo {
     width: 100%;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    margin-top: 2rem;
+  }
+
+  &__item {
+    @include bold-text;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    a {
+      color: $color-blue; // doesn't work in "&__item" block 
+    }
   }
 }
