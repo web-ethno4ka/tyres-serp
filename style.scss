@@ -36,6 +36,11 @@ $links: all 0.3s ease-in-out;
   }
 }
 
+@mixin bold-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -139,6 +144,7 @@ select:hover {
     width: 3.8rem;
     background: $color-white;
     cursor: pointer;
+
     i {
       font-size: $size-icon;
       color: $color-dark-gray;
@@ -174,7 +180,7 @@ select:hover {
     font-weight: 400;
   }
 
-  &__item+&__item:before {
+  &__item + &__item:before {
     padding: 0.8rem;
     content: "\003e";
     color: $color-blue;
@@ -195,6 +201,7 @@ select:hover {
   padding: 0 2rem;
   color: $color-dark-gray;
   background: $color-light-gray;
+  padding-bottom: 1rem;
 
   &__wrapper {
     justify-content: space-between;
@@ -219,6 +226,10 @@ select:hover {
     @include btn($color-blue);
     margin-bottom: 0;
   }
+}
+
+.heading-block {
+  margin-left: 2rem;
 }
 
 .serp-block {
@@ -310,34 +321,67 @@ input[type="checkbox"]:checked:after {
 	transform: rotate(-45deg);
 }
 
-.results-block {
+.search-results-block {
   margin-left: 2rem;
+  width: 110rem;
+}
+
+.tags-sorting-block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .tags-block {
   display: flex;
+  flex-flow: row wrap;
 
   &__item {
     position: relative;
     margin-top: 0;
-    margin-right: 6rem;
-    padding: .6rem 3rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 3.5rem;
     border: 1px solid $color-blue;
     border-radius: 2rem;
-
   } 
 
   &__link {
-    font-size: 1.6rem;
-    font-weight: 400;
+    @include bold-text;
     color: $color-blue;
   }
 
   &__link::before {
-    content: url('img/close.svg');
+    content: url('img/close-solid.svg');
     position: absolute; 
     width: 1.5rem;
-    right: -2.4rem;
-    top: 0.8rem;
+    right: 0.8rem;
+    top: 0.7rem;
+  }
+}
+
+.sorting-block {
+  &__item {
+    .input-field--shorter {
+      @include filter-field(20rem);
+      margin-top: 0;
+      outline: 1px solid $color-dark-gray;
+    }  
+  }
+}
+
+.cards-block {
+  width: 100%;
+  background: $color-light-gray;
+
+  &__images {
+    width: 12rem;
+  }
+
+  &__photo {  
+    width: 100%;
+  }
+
+  &__logo {
+    width: 100%;
   }
 }
