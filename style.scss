@@ -27,7 +27,8 @@ $links: all 0.3s ease-in-out;
 @mixin btn ($color-btn) {
   width: 28rem;
   height: $height-field;
-  font-size: 1.4rem;
+  font: 200 1.6rem Proxima Nova;
+  letter-spacing: .6px;
   color: $color-white;
   background: $color-btn;
   transition: $links;
@@ -47,6 +48,19 @@ $links: all 0.3s ease-in-out;
   position: absolute;
   width: 1.5rem;
   left: -2rem;
+}
+
+@mixin star-size {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0;
+}
+
+@mixin align-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 * {
@@ -383,7 +397,14 @@ input[type="checkbox"]:checked:after {
   width: 100%;
   margin: 2rem 0;
   padding: 2rem;
-  background: $color-light-gray;
+
+  &:nth-child(even) {
+    background: $color-light-gray;
+  }
+
+  &:nth-child(odd) {
+    background: $color-white;
+  }  
 
   &__images {
     width: 14rem;
@@ -453,10 +474,7 @@ input[type="checkbox"]:checked:after {
   }
 
   &__discount {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
+    @include align-center;
   }
 
   &__discount > span {
@@ -481,5 +499,25 @@ input[type="checkbox"]:checked:after {
   button[class^="cta-block__btn"] {
     margin-top: 2rem;
   }
+}
 
+.rate-block {
+  @include align-center;
+  &__stars {
+    display: inline-flex;
+  }
+
+  &__star {
+    background-image: url('img/star.svg');
+    @include star-size;
+  }
+
+  &__star-empty {
+    background-image: url('img/star-empty.svg');
+    @include star-size;
+  }
+
+  li[class^="rate-block__star"] {
+    margin-right: 0.5rem;
+  }
 }

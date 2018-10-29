@@ -221,7 +221,8 @@ select:hover {
 .filter-block__btn {
   width: 28rem;
   height: 3.8rem;
-  font-size: 1.4rem;
+  font: 200 1.6rem Proxima Nova;
+  letter-spacing: .6px;
   color: #fff;
   background: #0055a0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -256,7 +257,8 @@ select:hover {
 .sidebar-filter__btn {
   width: 28rem;
   height: 3.8rem;
-  font-size: 1.4rem;
+  font: 200 1.6rem Proxima Nova;
+  letter-spacing: .6px;
   color: #fff;
   background: #ababab;
   -webkit-transition: all 0.3s ease-in-out;
@@ -422,7 +424,14 @@ input[type="checkbox"]:checked:after {
   width: 100%;
   margin: 2rem 0;
   padding: 2rem;
+}
+
+.cards-block:nth-child(even) {
   background: #f8f8f8;
+}
+
+.cards-block:nth-child(odd) {
+  background: #fff;
 }
 
 .cards-block__images {
@@ -538,7 +547,8 @@ input[type="checkbox"]:checked:after {
 .cta-block__btn-offers {
   width: 28rem;
   height: 3.8rem;
-  font-size: 1.4rem;
+  font: 200 1.6rem Proxima Nova;
+  letter-spacing: .6px;
   color: #fff;
   background: #0055a0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -553,7 +563,8 @@ input[type="checkbox"]:checked:after {
 .cta-block__btn-cart {
   width: 28rem;
   height: 3.8rem;
-  font-size: 1.4rem;
+  font: 200 1.6rem Proxima Nova;
+  letter-spacing: .6px;
   color: #fff;
   background: #7ab51d;
   -webkit-transition: all 0.3s ease-in-out;
@@ -567,5 +578,41 @@ input[type="checkbox"]:checked:after {
 
 .cta-block button[class^="cta-block__btn"] {
   margin-top: 2rem;
+}
+
+.rate-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.rate-block__stars {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.rate-block__star {
+  background-image: url("img/star.svg");
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0;
+}
+
+.rate-block__star-empty {
+  background-image: url("img/star-empty.svg");
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0;
+}
+
+.rate-block li[class^="rate-block__star"] {
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
