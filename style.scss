@@ -3,6 +3,7 @@ $color-blue: #0055a0;
 $color-light-blue: #0163b9;
 $color-green: #7ab51d;
 $color-yellow: #ffe400;
+$color-orange: #ff6000;
 $color-light-gray: #f8f8f8;
 $color-gray: #ababab;
 $color-dark-gray: #333333;
@@ -26,6 +27,7 @@ $links: all 0.3s ease-in-out;
 @mixin btn ($color-btn) {
   width: 28rem;
   height: $height-field;
+  font-size: 1.4rem;
   color: $color-white;
   background: $color-btn;
   transition: $links;
@@ -39,6 +41,12 @@ $links: all 0.3s ease-in-out;
 @mixin bold-text {
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+@mixin icons-position {
+  position: absolute;
+  width: 1.5rem;
+  left: -2rem;
 }
 
 * {
@@ -360,6 +368,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .sorting-block {
+  padding-right: 2rem;
   &__item {
     .input-field--shorter {
       @include filter-field(20rem);
@@ -372,7 +381,8 @@ input[type="checkbox"]:checked:after {
 .cards-block {
   justify-content: space-around;
   width: 100%;
-  padding: 2rem 0;
+  margin: 2rem 0;
+  padding: 2rem;
   background: $color-light-gray;
 
   &__images {
@@ -403,6 +413,10 @@ input[type="checkbox"]:checked:after {
       color: $color-blue; // doesn't work in "&__item" block 
     }
   }
+
+  &__description {
+    width: 
+  }
 }
 
 .tyre-characteristics {
@@ -413,10 +427,59 @@ input[type="checkbox"]:checked:after {
     position: relative;
   }
 
-  &__link::before {
-    content: url('img/close.svg');
-    position: absolute;
-    width: 1.5rem;
-    left: -2rem;
+  &__link:nth-child(1)::before {
+    content: url('img/1.svg');
+    @include icons-position;
   }
+
+  &__link:nth-child(2)::before {
+    content: url('img/2.svg');
+    @include icons-position;
+  }
+
+  &__link:nth-child(3)::before {
+    content: url('img/3.svg');
+    @include icons-position;
+  }
+}
+
+.cta-block {  
+  width: 28rem;
+  text-align: center;
+  &__price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-blue;
+  }
+
+  &__discount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__discount > span {
+    font-size: 1.6rem;
+    color: $color-dark-gray;
+  }
+
+  &__discount > span:first-child {
+    padding: 0.5rem 2rem;
+    border: 1px solid $color-orange;
+    color: $color-orange;
+  }
+
+  &__btn-offers {
+    @include btn($color-blue);
+  }
+
+  &__btn-cart {
+    @include btn($color-green);
+  }
+
+  button[class^="cta-block__btn"] {
+    margin-top: 2rem;
+  }
+
 }
