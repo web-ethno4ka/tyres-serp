@@ -426,24 +426,15 @@ input[type="checkbox"]:checked:after {
 }
 
 .cards-block__images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 16rem;
+  width: 14rem;
 }
 
 .cards-block__photo {
-  max-width: 14rem;
+  width: 100%;
 }
 
 .cards-block__logo {
-  max-width: 14rem;
+  width: 100%;
 }
 
 .cards-block__links {
@@ -473,6 +464,10 @@ input[type="checkbox"]:checked:after {
 
 .cards-block__item a {
   color: #0055a0;
+}
+
+.cards-block__description {
+  max-width: 50rem;
 }
 
 .tyre-characteristics {
