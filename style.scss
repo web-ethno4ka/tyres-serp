@@ -263,12 +263,12 @@ select:hover {
 }
 
 .sidebar-filter {
-  max-width: 30rem;
+  width: 30rem;
   font-size: 1.6rem;
 
   &__btn {
     @include btn($color-gray);
-    min-width: 20rem;
+    width: 100%;
   }
 
   &__category {
@@ -407,21 +407,28 @@ input[type="checkbox"]:checked:after {
   }  
 
   &__images {
-    width: 14rem;
+    width: 25%;
+    max-width: 14rem;
   }
 
   &__photo {  
     width: 100%;
+
   }
 
   &__logo {
     width: 100%;
   }
 
+  &__description {
+    width: 40rem;
+    margin: 0 2rem;
+  }
+
   &__links {
     display: flex;
     flex-direction: column;
-    align-content: stretch;
+    // align-content: stretch;
     margin-top: 2rem;
   }
 
@@ -433,10 +440,6 @@ input[type="checkbox"]:checked:after {
     a {
       color: $color-blue; // doesn't work in "&__item" block 
     }
-  }
-
-  &__description {
-    max-width: 50rem;
   }
 }
 
@@ -464,8 +467,10 @@ input[type="checkbox"]:checked:after {
   }
 }
 
-.cta-block {  
-  width: 28rem;
+.cta-block {
+  width: 25%;
+  max-width: 28rem;  
+  // width: 28rem;
   text-align: center;
   &__price {
     font-size: 2rem;
@@ -482,7 +487,7 @@ input[type="checkbox"]:checked:after {
     color: $color-dark-gray;
   }
 
-  &__discount > span:first-child {
+  &__discount > span:nth-child(2) {
     padding: 0.5rem 2rem;
     border: 1px solid $color-orange;
     color: $color-orange;
@@ -490,10 +495,12 @@ input[type="checkbox"]:checked:after {
 
   &__btn-offers {
     @include btn($color-blue);
+    width: 100%;
   }
 
   &__btn-cart {
     @include btn($color-green);
+    width: 100%;
   }
 
   button[class^="cta-block__btn"] {

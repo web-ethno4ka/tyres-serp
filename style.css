@@ -250,7 +250,7 @@ select:hover {
 }
 
 .sidebar-filter {
-  max-width: 30rem;
+  width: 30rem;
   font-size: 1.6rem;
 }
 
@@ -263,7 +263,7 @@ select:hover {
   background: #ababab;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  min-width: 20rem;
+  width: 100%;
 }
 
 .sidebar-filter__btn:hover {
@@ -435,7 +435,8 @@ input[type="checkbox"]:checked:after {
 }
 
 .cards-block__images {
-  width: 14rem;
+  width: 25%;
+  max-width: 14rem;
 }
 
 .cards-block__photo {
@@ -446,6 +447,11 @@ input[type="checkbox"]:checked:after {
   width: 100%;
 }
 
+.cards-block__description {
+  width: 40rem;
+  margin: 0 2rem;
+}
+
 .cards-block__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,8 +460,6 @@ input[type="checkbox"]:checked:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
   margin-top: 2rem;
 }
 
@@ -473,10 +477,6 @@ input[type="checkbox"]:checked:after {
 
 .cards-block__item a {
   color: #0055a0;
-}
-
-.cards-block__description {
-  max-width: 50rem;
 }
 
 .tyre-characteristics {
@@ -511,7 +511,8 @@ input[type="checkbox"]:checked:after {
 }
 
 .cta-block {
-  width: 28rem;
+  width: 25%;
+  max-width: 28rem;
   text-align: center;
 }
 
@@ -538,7 +539,7 @@ input[type="checkbox"]:checked:after {
   color: #333333;
 }
 
-.cta-block__discount > span:first-child {
+.cta-block__discount > span:nth-child(2) {
   padding: 0.5rem 2rem;
   border: 1px solid #ff6000;
   color: #ff6000;
@@ -553,6 +554,7 @@ input[type="checkbox"]:checked:after {
   background: #0055a0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  width: 100%;
 }
 
 .cta-block__btn-offers:hover {
@@ -569,6 +571,7 @@ input[type="checkbox"]:checked:after {
   background: #7ab51d;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  width: 100%;
 }
 
 .cta-block__btn-cart:hover {
