@@ -39,6 +39,13 @@ $links: all 0.3s ease-in-out;
   }
 }
 
+@mixin tyre-season {
+  position: absolute; 
+  width: 1.8rem;
+  top: 0;
+  right: -1rem;
+}
+
 @mixin bold-text {
   font-size: 1.6rem;
   font-weight: 400;
@@ -407,8 +414,24 @@ input[type="checkbox"]:checked:after {
   }  
 
   &__images {
+    position: relative;
     width: 25%;
     max-width: 14rem;
+  }
+
+  &--winter::after {
+    @include tyre-season;
+    content: url('img/winter.svg');
+  }
+
+  &--summer::after {
+    @include tyre-season;
+    content: url('img/summer.svg');
+  }
+
+  &--all-season::after {
+    @include tyre-season;
+    content: url('img/all-season.svg');
   }
 
   &__photo {  

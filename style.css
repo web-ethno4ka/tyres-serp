@@ -435,8 +435,33 @@ input[type="checkbox"]:checked:after {
 }
 
 .cards-block__images {
+  position: relative;
   width: 25%;
   max-width: 14rem;
+}
+
+.cards-block--winter::after {
+  position: absolute;
+  width: 1.8rem;
+  top: 0;
+  right: -1rem;
+  content: url("img/winter.svg");
+}
+
+.cards-block--summer::after {
+  position: absolute;
+  width: 1.8rem;
+  top: 0;
+  right: -1rem;
+  content: url("img/summer.svg");
+}
+
+.cards-block--all-season::after {
+  position: absolute;
+  width: 1.8rem;
+  top: 0;
+  right: -1rem;
+  content: url("img/all-season.svg");
 }
 
 .cards-block__photo {
