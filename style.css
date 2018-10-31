@@ -461,7 +461,34 @@ input[type="checkbox"]:checked:after {
   width: 1.8rem;
   top: 0;
   right: -1rem;
-  content: url("img/all-season.svg");
+  content: url("img/all-season-2.svg");
+}
+
+.cards-block--best-price::before {
+  content: url("img/badge-price.svg");
+  position: absolute;
+  width: 8rem;
+  left: -71px;
+}
+
+.cards-block--best-seller::before {
+  content: url("img/badge-seller.svg");
+  position: absolute;
+  width: 8rem;
+  left: -71px;
+}
+
+.cards-block--hot::before {
+  content: url("img/stamp-3-2.png");
+  position: absolute;
+  left: -7.5rem;
+}
+
+.cards-block--best-seller::before {
+  content: url("img/stamp-4-1.png");
+  position: absolute;
+  left: -3rem;
+  top: 8rem;
 }
 
 .cards-block__photo {
