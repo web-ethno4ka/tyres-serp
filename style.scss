@@ -282,7 +282,7 @@ select:hover {
 
   &__btn {
     @include btn($color-gray);
-    width: 100%;
+    // width: 100%;
   }
 
   &__category {
@@ -422,8 +422,9 @@ input[type="checkbox"]:checked:after {
 
   &__images {
     position: relative;
-    width: 25%;
-    max-width: 14rem;
+    width: 14rem;
+    // width: 25%;
+    // max-width: 14rem;
   }
 
   &--winter::after {
@@ -571,4 +572,217 @@ input[type="checkbox"]:checked:after {
   li[class^="rate-block__star"] {
     margin-right: 0.5rem;
   }
+}
+
+
+
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem 0;
+}
+
+.pagination a {
+  padding: .5rem 1rem;
+  color: $color-dark-gray;
+  font-weight: 300;  
+}
+
+.pagination a.active {
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: $color-light-gray;
+  color: $color-blue;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  background: #d7d7d7;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
+  max-width: 86rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 14rem;
+}
+
+.footer-links > li {
+  margin-right: 8rem;
+}
+
+.footer-links:not(:last-child) {
+  margin-right: 16rem;
+}
+
+.footer-links__item {
+  padding-bottom: .5rem;
+  font-weight: 300;
+}
+
+.footer-links__item a {
+  color: #3b3b3b;
+}
+
+.footer-links__item a:hover {
+  color: #ff8000;
+  transition: all .3s linear;
+}
+
+.footer-links__item b a{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.socials-languages__block {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  max-width: 58rem;
+}
+
+.socials-block__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-block__footer .socials-item__link i {
+  font-size: 2.4rem;
+  color: #3b3b3d;
+  display: inline-block;
+  transition: all .3s linear;
+}
+
+.socials-item__link i:hover {
+  color: #ff9000;
+}
+
+.logo-delticom {
+  width: 30rem;
+  height: 2.5rem;
+  background-image: url('img/delti_logo.png');
+  background-position: center;
+  margin: 0 auto;
+}
+
+.logo-delticom:hover {
+  cursor: pointer;
+}
+
+.socials-languages__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.languages__block {
+  display: flex;
+  justify-content: center;
+}
+
+.languages__block ul {
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 95%;
+}
+
+.languages__block li {
+  margin-right: 1rem;
+}
+
+.languages__block li, .languages__block a {
+  height: 1.5rem;
+  display: block;
+}
+
+#germ {
+  left: 0;
+  width: 2rem;
+  background: url('img/sprite_lang.png') 0 0;
+}
+
+#fr {
+  left: 2.8rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -28px 0;
+}
+
+#sw {
+  left: 5.5rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -55px 0;
+}
+
+#se {
+  left: 8.2rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -82px 0;
+}
+
+#it {
+  left: 10.9rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -109px 0;
+}
+
+#no {
+  left: 13.6rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -136px 0;
+}
+
+#dk {
+  left: 16.3rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -163px 0;
+}
+
+#nl {
+  left: 19rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -190px 0;
+}
+
+#uk {
+  left: 21.7rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -217px 0;
+}
+
+#us {
+  left: 24.4rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -244px 0;
+}
+
+#es {
+  left: 27.1rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -271px 0;
+}
+
+#at {
+  left: 29.8rem;
+  width: 2rem;
+  background: url('img/sprite_lang.png') -298px 0;
 }
