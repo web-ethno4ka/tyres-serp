@@ -465,30 +465,27 @@ input[type="checkbox"]:checked:after {
 }
 
 .cards-block--best-price::before {
-  content: url("img/badge-price.svg");
+  content: url("img/badge-price-2.svg");
   position: absolute;
-  width: 8rem;
-  left: -71px;
+  width: 6rem;
+  left: -4rem;
+  top: -2.9rem;
 }
 
 .cards-block--best-seller::before {
-  content: url("img/badge-seller.svg");
+  content: url("img/badge-seller-2.svg");
   position: absolute;
-  width: 8rem;
-  left: -71px;
+  width: 6rem;
+  left: -4rem;
+  top: -2.9rem;
 }
 
-.cards-block--hot::before {
-  content: url("img/stamp-3-2.png");
+.cards-block--high-rate::before {
+  content: url("img/badge-rate-2.svg");
   position: absolute;
-  left: -7.5rem;
-}
-
-.cards-block--best-seller::before {
-  content: url("img/stamp-4-1.png");
-  position: absolute;
-  left: -3rem;
-  top: 8rem;
+  width: 6rem;
+  left: -4rem;
+  top: -2.9rem;
 }
 
 .cards-block__photo {

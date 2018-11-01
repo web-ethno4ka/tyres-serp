@@ -57,6 +57,13 @@ $links: all 0.3s ease-in-out;
   left: -2rem;
 }
 
+@mixin badge-properties {
+  position: absolute;
+  width: 6rem;
+  left: -4rem;
+  top: -2.9rem;
+}
+
 @mixin star-size {
   width: 1.5rem;
   height: 1.5rem;
@@ -435,30 +442,18 @@ input[type="checkbox"]:checked:after {
   }
 
   &--best-price::before {
-    content: url('img/badge-price.svg');
-    position: absolute;
-    width: 8rem;
-    left: -71px;
+    content: url('img/badge-price-2.svg');
+    @include badge-properties;
   }
 
   &--best-seller::before {
-    content: url('img/badge-seller.svg');
-    position: absolute;
-    width: 8rem;
-    left: -71px;
+    content: url('img/badge-seller-2.svg');
+    @include badge-properties;
   }
 
-  &--hot::before {
-    content: url('img/stamp-3-2.png');
-    position: absolute;
-    left: -7.5rem;
-  }
-
-  &--best-seller::before {
-    content: url('img/stamp-4-1.png');
-    position: absolute;
-    left: -3rem;
-    top: 8rem;
+  &--high-rate::before {
+    content: url('img/badge-rate-2.svg');
+    @include badge-properties;
   }
 
   &__photo {  
