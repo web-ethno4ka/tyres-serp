@@ -274,10 +274,20 @@ select:hover {
   font-weight: 400;
 }
 
+.sidebar-filter__category:hover {
+  color: #0055a0;
+}
+
 .sidebar-filter__submenu {
   margin: 0 0 0 1rem;
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-filter__submenu li a:hover {
+  color: #0055a0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -695,7 +705,7 @@ input[type="checkbox"]:checked:after {
 .footer {
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 2rem 4rem;
   background: #ababab;
 }
 
