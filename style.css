@@ -676,30 +676,30 @@ input[type="checkbox"]:checked:after {
   margin: 3rem 0;
 }
 
-.pagination a {
+.pagination__item {
   padding: .5rem 1rem;
   color: #333333;
   font-weight: 300;
 }
 
-.pagination a.active {
+.pagination__item--active {
   background-color: #0055a0;
   color: #fff;
 }
 
-.pagination a:hover:not(.active) {
+.pagination__item:hover:not(.pagination__item--active) {
   background-color: #f8f8f8;
   color: #0055a0;
 }
 
-footer {
+.footer {
   width: 100%;
   height: auto;
   padding: 2rem;
-  background: #d7d7d7;
+  background: #ababab;
 }
 
-.footer-wrapper {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,7 +711,7 @@ footer {
       align-content: center;
 }
 
-.links {
+.footer__links-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,14 +719,14 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 60%;
-  max-width: 86rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  color: #fff;
 }
 
-.footer-links {
+.links-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,30 +737,30 @@ footer {
   max-height: 14rem;
 }
 
-.footer-links > li {
+.links-block__item {
   margin-right: 8rem;
 }
 
-.footer-links:not(:last-child) {
+.links-block:not(:last-child) {
   margin-right: 16rem;
 }
 
-.footer-links__item {
+.links-block__item {
   padding-bottom: .5rem;
   font-weight: 300;
 }
 
-.footer-links__item a {
+.links-block__item a {
   color: #3b3b3b;
 }
 
-.footer-links__item a:hover {
+.links-block__item a:hover {
   color: #ff8000;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
 
-.footer-links__item b a {
+.links-block__item b a {
   text-transform: uppercase;
   font-weight: 500;
 }

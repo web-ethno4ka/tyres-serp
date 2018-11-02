@@ -574,84 +574,84 @@ input[type="checkbox"]:checked:after {
   }
 }
 
-
-
-
 .pagination {
   display: flex;
   justify-content: flex-end;
   margin: 3rem 0;
+
+  &__item {
+    padding: .5rem 1rem;
+    color: $color-dark-gray;
+    font-weight: 300; 
+
+    &--active {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+
+    &:hover:not(&--active) {
+      background-color: $color-light-gray;
+      color: $color-blue;
+    }
+  } 
 }
 
-.pagination a {
-  padding: .5rem 1rem;
-  color: $color-dark-gray;
-  font-weight: 300;  
-}
-
-.pagination a.active {
-  background-color: $color-blue;
-  color: $color-white;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: $color-light-gray;
-  color: $color-blue;
-}
-
-footer {
+.footer {
   width: 100%;
   height: auto;
   padding: 2rem;
-  background: #d7d7d7;
+  background: $color-gray;
+
+  &__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+  }
+
+  &__links-blocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+    // max-width: 86rem;
+    color: $color-white;
+  }
 }
 
-.footer-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-}
-
-.links {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 60%;
-  max-width: 86rem;
-}
-
-.footer-links {
+.links-block {
   display: flex;
   flex-flow: column wrap;
   max-height: 14rem;
 }
 
-.footer-links > li {
+.links-block__item {
   margin-right: 8rem;
 }
 
-.footer-links:not(:last-child) {
+.links-block:not(:last-child) {
   margin-right: 16rem;
 }
 
-.footer-links__item {
+.links-block__item {
   padding-bottom: .5rem;
   font-weight: 300;
 }
 
-.footer-links__item a {
+.links-block__item a {
   color: #3b3b3b;
 }
 
-.footer-links__item a:hover {
+.links-block__item a:hover {
   color: #ff8000;
   transition: all .3s linear;
 }
 
-.footer-links__item b a{
+.links-block__item b a{
   text-transform: uppercase;
   font-weight: 500;
 }
+
+
 
 .socials-languages__block {
   display: flex;
