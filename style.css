@@ -706,7 +706,7 @@ input[type="checkbox"]:checked:after {
   width: 100%;
   height: auto;
   padding: 2rem 4rem;
-  background: #ababab;
+  background: #f8f8f8;
 }
 
 .footer__container {
@@ -729,11 +729,68 @@ input[type="checkbox"]:checked:after {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   color: #fff;
+}
+
+.footer__socials-languages-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.footer__socials-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__socials-item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__socials-link i {
+  font-size: 2rem;
+  color: #333333;
+  display: inline-block;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.footer__socials-link i:hover {
+  color: #0055a0;
+}
+
+.footer__languages-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__languages-block li {
+  margin-right: 1rem;
+  margin-top: 0;
+}
+
+.footer__languages-block li,
+.footer__languages-block a {
+  height: 1.5rem;
+  display: block;
 }
 
 .links-block {
@@ -744,19 +801,14 @@ input[type="checkbox"]:checked:after {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  max-height: 14rem;
-}
-
-.links-block__item {
-  margin-right: 8rem;
 }
 
 .links-block:not(:last-child) {
-  margin-right: 16rem;
+  margin-right: 10rem;
 }
 
 .links-block__item {
-  padding-bottom: .5rem;
+  margin-top: 1.4rem;
   font-weight: 300;
 }
 
@@ -765,96 +817,14 @@ input[type="checkbox"]:checked:after {
 }
 
 .links-block__item a:hover {
-  color: #ff8000;
+  color: #0055a0;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
 
 .links-block__item b a {
-  text-transform: uppercase;
   font-weight: 500;
-}
-
-.socials-languages__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40%;
-  max-width: 58rem;
-}
-
-.socials-block__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.socials-block__footer .socials-item__link i {
-  font-size: 2.4rem;
-  color: #3b3b3d;
-  display: inline-block;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-}
-
-.socials-item__link i:hover {
-  color: #ff9000;
-}
-
-.logo-delticom {
-  width: 30rem;
-  height: 2.5rem;
-  background-image: url("img/delti_logo.png");
-  background-position: center;
-  margin: 0 auto;
-}
-
-.logo-delticom:hover {
-  cursor: pointer;
-}
-
-.socials-languages__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.languages__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.languages__block ul {
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  top: 95%;
-}
-
-.languages__block li {
-  margin-right: 1rem;
-}
-
-.languages__block li, .languages__block a {
-  height: 1.5rem;
-  display: block;
+  text-transform: uppercase;
 }
 
 #germ {
