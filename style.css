@@ -249,12 +249,12 @@ select:hover {
   background: #fff;
 }
 
-.sidebar-filter {
+.aside-filter {
   width: 30rem;
   font-size: 1.6rem;
 }
 
-.sidebar-filter__btn {
+.aside-filter__btn {
   width: 28rem;
   height: 3.8rem;
   font: 200 1.6rem Proxima Nova;
@@ -265,9 +265,18 @@ select:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.sidebar-filter__btn:hover {
+.aside-filter__btn:hover {
   background: #bfbfbf;
   cursor: pointer;
+}
+
+.aside-filter__btn--show {
+  display: none;
+}
+
+.sidebar-filter {
+  width: 30rem;
+  font-size: 1.6rem;
 }
 
 .sidebar-filter__category {
@@ -496,16 +505,14 @@ input[type="checkbox"]:checked:after {
   top: -2.9rem;
 }
 
-.cards-block__photo {
+.cards-block__photo, .cards-block__logo {
   width: 100%;
-}
-
-.cards-block__logo {
-  width: 100%;
+  min-width: 14rem;
 }
 
 .cards-block__description {
-  width: 40rem;
+  width: 50%;
+  min-width: 20rem;
   margin: 0 2rem;
 }
 
@@ -897,5 +904,38 @@ input[type="checkbox"]:checked:after {
   left: 29.8rem;
   width: 2rem;
   background: url("img/sprite_lang.png") -298px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter-block__item {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .filter-block__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .filter-block__item {
+    margin-bottom: 2rem;
+  }
+  .filter-block__btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .aside-filter__btn--show {
+    display: block;
+    margin-top: 2rem;
+  }
+  .sidebar-filter {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

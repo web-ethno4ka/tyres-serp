@@ -281,14 +281,23 @@ select:hover {
   background: $color-white;
 }
 
-.sidebar-filter {
+.aside-filter {
   width: 30rem;
   font-size: 1.6rem;
-
+  
   &__btn {
     @include btn($color-gray);
     // width: 100%;
+    
+    &--show {
+      display: none;
+    }
   }
+}
+
+.sidebar-filter {
+  width: 30rem;
+  font-size: 1.6rem;
 
   &__category {
     font-weight: 400;
@@ -471,16 +480,15 @@ input[type="checkbox"]:checked:after {
     @include badge-properties;
   }
 
-  &__photo {  
+  &__photo,
+  &__logo {  
     width: 100%;
-  }
-
-  &__logo {
-    width: 100%;
+    min-width: 14rem;
   }
 
   &__description {
-    width: 40rem;
+    width: 50%;
+    min-width: 20rem;
     margin: 0 2rem;
   }
 
@@ -771,4 +779,38 @@ input[type="checkbox"]:checked:after {
   left: 29.8rem;
   width: 2rem;
   background: url('img/sprite_lang.png') -298px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter-block {
+    &__item {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .filter-block {
+    &__wrapper {
+      flex-flow: row wrap;
+      justify-content: space-evenly;  
+    }
+    &__item {
+      margin-bottom: 2rem;
+    }
+    &__btn {
+      align-self: center;
+    }
+  }
+
+  .aside-filter {
+    &__btn--show {
+        display: block;
+        margin-top: 2rem;
+    }
+  }
+
+  .sidebar-filter {
+    display: none;
+  }
 }
