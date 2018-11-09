@@ -828,6 +828,10 @@ input[type="checkbox"]:checked:after {
 }
 
 @media screen and (max-width: 768px) {
+  .heading-block {
+    margin-bottom: 1rem;
+  }
+
   .serp-block {
     flex-flow: column;  
   }
@@ -835,18 +839,13 @@ input[type="checkbox"]:checked:after {
   .aside-filter {
     width: 95vw;
     &__btn {
-    margin: 3rem 0;
-      &--remove {
-        display: none;
-      }
-      &--mobile {
-        display: block;
-        margin: 3rem auto;
-      }
+      margin: 3rem 0;
+      display: none;
     }
   }
 
   .sidebar-filter {
+    margin-bottom: 4rem;
     &__list {
       width: 95vw;
       display: inline-flex;
@@ -869,12 +868,14 @@ input[type="checkbox"]:checked:after {
 
   .tags-sorting-block {
     justify-content: flex-start;
-    .tags-block {
-      max-width: 50vw;
-    }  
-    .sorting-block {
-      max-width: 50vw;
-    }
+  }
+
+  .tags-block {
+    max-width: 50vw;
+  }  
+  
+  .sorting-block {
+    max-width: 50vw;
   }
 
   .cards-block {
@@ -887,9 +888,66 @@ input[type="checkbox"]:checked:after {
     .links-block {
       margin-right: 4rem;
     }
+
+    &__socials-languages-block {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    &__languages-block {
+      margin-top: 2rem;
+    }
   }
-  &__socials-languages-block {
+}
+
+@media screen and (max-width: 600px) {
+  .header,
+  .serp-block {
+    padding: 1rem;
+  }
+
+  .aside-filter {
+    &__btn {
+      display: block; 
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .sidebar-filter {
+    display: none;
+  }
+
+  .sorting-block {
+    display: none;
+  }
+
+  .tags-block {
+    max-width: 95vw;
+  }
+
+  .cards-block {
+    flex-flow: column;
+    align-content: center;
+    max-width: 58rem;
+    min-width: 30rem;
+
+    &__images,
+    &__description,
+    .cta-block {
+      margin: auto;
+    }
+
+    &__description,
+    .cta-block {
+      width: 80%;
+      min-width: 20rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .tyre-characteristics {
     display: flex;
-    flex-flow: column wrap;
+    justify-content: center;
   }
 }

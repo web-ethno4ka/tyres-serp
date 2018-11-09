@@ -960,6 +960,9 @@ input[type="checkbox"]:checked:after {
 }
 
 @media screen and (max-width: 768px) {
+  .heading-block {
+    margin-bottom: 1rem;
+  }
   .serp-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -971,13 +974,10 @@ input[type="checkbox"]:checked:after {
   }
   .aside-filter__btn {
     margin: 3rem 0;
-  }
-  .aside-filter__btn--remove {
     display: none;
   }
-  .aside-filter__btn--mobile {
-    display: block;
-    margin: 3rem auto;
+  .sidebar-filter {
+    margin-bottom: 4rem;
   }
   .sidebar-filter__list {
     width: 95vw;
@@ -1008,10 +1008,10 @@ input[type="checkbox"]:checked:after {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .tags-sorting-block .tags-block {
+  .tags-block {
     max-width: 50vw;
   }
-  .tags-sorting-block .sorting-block {
+  .sorting-block {
     max-width: 50vw;
   }
   .cards-block {
@@ -1023,7 +1023,7 @@ input[type="checkbox"]:checked:after {
   .footer .links-block {
     margin-right: 4rem;
   }
-  __socials-languages-block {
+  .footer__socials-languages-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1031,6 +1031,58 @@ input[type="checkbox"]:checked:after {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+  }
+  .footer__languages-block {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header,
+  .serp-block {
+    padding: 1rem;
+  }
+  .aside-filter__btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .sidebar-filter {
+    display: none;
+  }
+  .sorting-block {
+    display: none;
+  }
+  .tags-block {
+    max-width: 95vw;
+  }
+  .cards-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    max-width: 58rem;
+    min-width: 30rem;
+  }
+  .cards-block__images, .cards-block__description,
+  .cards-block .cta-block {
+    margin: auto;
+  }
+  .cards-block__description,
+  .cards-block .cta-block {
+    width: 80%;
+    min-width: 20rem;
+    margin-top: 2rem;
+  }
+  .tyre-characteristics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
