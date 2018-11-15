@@ -11,6 +11,7 @@ $color-white: #fff;
 
 // SIZES
 $size-icon: 2rem;
+$size-icon-mobile: 1.6rem;
 $height-field: 3.8rem;
 
 // ANIMATIONS
@@ -194,6 +195,10 @@ select:hover {
       }
     }
   } 
+
+  &__mobile-menu-btn {
+    display: none;
+  }
 }
 
 .icons-block {
@@ -884,6 +889,43 @@ input[type="checkbox"]:checked:after {
 }
 
 @media screen and (max-width: 640px) {
+  .header {
+    &__search-block {
+      width: 10%;
+    }
+    &__search-field {
+      display: none;
+    }
+
+    &__mobile-menu-btn {
+      display: block;
+    }
+
+    &__search-btn,
+    &__mobile-menu-btn {
+      background: transparent;
+    }
+
+    &__search-btn i,
+    &__mobile-menu-btn {
+      color: $color-white;
+      font-size: $size-icon-mobile;
+      transition: $links;
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  .icons-block {
+    &__item:not(:last-child) {
+      margin-right: 3rem;
+    }
+    &__link {
+      font-size: 1.6rem;
+    }
+  }
+
   .footer {
     .links-block {
       margin-right: 4rem;
@@ -949,5 +991,16 @@ input[type="checkbox"]:checked:after {
   .tyre-characteristics {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    &__logo-block {
+      width: 60%;
+
+    }
   }
 }
