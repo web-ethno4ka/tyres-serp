@@ -134,7 +134,7 @@ select:hover {
   color: #0055a0;
 }
 
-.header__mobile-menu-btn {
+.header__mobile-menu-block {
   display: none;
 }
 
@@ -1030,7 +1030,7 @@ input[type="checkbox"]:checked:after {
   .header__search-field {
     display: none;
   }
-  .header__mobile-menu-btn {
+  .header__mobile-menu-block {
     display: block;
   }
   .header__search-btn, .header__mobile-menu-btn {
@@ -1044,6 +1044,9 @@ input[type="checkbox"]:checked:after {
   }
   .header__search-btn i:hover, .header__mobile-menu-btn:hover {
     color: #ffe400;
+  }
+  .aside-filter button {
+    display: none;
   }
   .icons-block__item:not(:last-child) {
     margin-right: 3rem;
@@ -1128,6 +1131,12 @@ input[type="checkbox"]:checked:after {
   }
   .header__logo-block {
     width: 60%;
+  }
+  .filter-block__item .input-field--shorter {
+    width: 25rem;
+    height: 3.8rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -196,7 +196,7 @@ select:hover {
     }
   } 
 
-  &__mobile-menu-btn {
+  &__mobile-menu-block {
     display: none;
   }
 }
@@ -897,7 +897,7 @@ input[type="checkbox"]:checked:after {
       display: none;
     }
 
-    &__mobile-menu-btn {
+    &__mobile-menu-block {
       display: block;
     }
 
@@ -915,6 +915,11 @@ input[type="checkbox"]:checked:after {
         color: $color-yellow;
       }
     }
+  }
+
+  
+  .aside-filter button {
+    display: none;
   }
 
   .icons-block {
@@ -998,9 +1003,17 @@ input[type="checkbox"]:checked:after {
   .header {
     justify-content: space-around;
     flex-flow: row wrap;
+
     &__logo-block {
       width: 60%;
+    }
+  }
 
+  .filter-block {     
+    &__item {
+      .input-field--shorter {
+        @include filter-field(25rem);
+      }     
     }
   }
 }
