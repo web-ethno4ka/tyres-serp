@@ -1016,4 +1016,15 @@ input[type="checkbox"]:checked:after {
       }     
     }
   }
+
+  .footer {
+    &__links-blocks {
+      flex-flow: column;
+    }
+
+    .links-block {
+      margin-right: 0;
+      margin-left: 6rem;
+    }
+  }
 }
