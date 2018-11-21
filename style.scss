@@ -671,6 +671,7 @@ input[type="checkbox"]:checked:after {
 
   &__languages-block {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
   }
 
@@ -875,6 +876,11 @@ input[type="checkbox"]:checked:after {
     justify-content: flex-start;
   }
 
+  .pagination {
+    justify-content: center;
+    width: 95vw;
+  }
+
   .tags-block {
     max-width: 50vw;
   }  
@@ -1015,6 +1021,14 @@ input[type="checkbox"]:checked:after {
         @include filter-field(25rem);
       }     
     }
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .tags-block {
+    justify-content: center;
   }
 
   .footer {
@@ -1025,6 +1039,10 @@ input[type="checkbox"]:checked:after {
     .links-block {
       margin-right: 0;
       margin-left: 6rem;
+    }
+
+    &__languages-block li {
+      margin-top: 1rem;
     }
   }
 }
