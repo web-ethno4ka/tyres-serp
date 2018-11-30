@@ -1142,6 +1142,9 @@ input[type="checkbox"]:checked:after {
   .header__logo-block {
     width: 60%;
   }
+  .filter-block__item {
+    margin-right: 0;
+  }
   .filter-block__item .input-field--shorter {
     width: 25rem;
     height: 3.8rem;
