@@ -1,0 +1,26 @@
+.breadcrumbs {
+    padding: 2rem;
+    background: $color-light-gray;
+  
+    &__item {
+      display: inline;
+      color: $color-dark-gray;
+      font-weight: 400;
+    }
+  
+    &__item + &__item:before {
+      padding: 0.8rem;
+      content: "\003e";
+      color: $color-blue;
+    }
+    
+    &__link {
+      color: $color-blue;
+      font-weight: 300;
+      transition: $links;
+    }
+  
+    &__link:hover {
+      color: $color-dark-gray;
+    }
+}

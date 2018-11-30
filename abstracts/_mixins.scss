@@ -1,0 +1,65 @@
+// MIXINS
+@mixin filter-field ($width-field) {
+    width: $width-field;
+    height: $height-field;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+  
+  @mixin btn ($color-btn) {
+    width: 28rem;
+    height: $height-field;
+    font: 200 1.6rem Proxima Nova;
+    letter-spacing: .6px;
+    color: $color-white;
+    background: $color-btn;
+    transition: $links;
+  
+    &:hover {
+      background: lighten($color-btn, 8%);
+      cursor: pointer;
+    }
+  }
+  
+  @mixin tyre-season {
+    position: absolute; 
+    width: 1.8rem;
+    top: 0;
+    right: -1rem;
+  }
+  
+  @mixin bold-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  
+  @mixin icons-position {
+    position: absolute;
+    width: 1.5rem;
+    left: -2rem;
+  }
+  
+  @mixin badge-properties {
+    position: absolute;
+    width: 6rem;
+    left: -4rem;
+    top: -2.9rem;
+  }
+  
+  @mixin star-size {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0;
+  }
+  
+  @mixin align-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  @mixin hover-animation {
+    background-color: $color-light-gray;
+    color: $color-blue;
+  }

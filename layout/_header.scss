@@ -1,0 +1,64 @@
+.header {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    background: $color-blue; 
+  
+    &__logo-block {
+      width: 30%;
+      max-width: 28rem;
+      &:hover {
+        cursor: pointer;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  
+    &__search-block {
+      width: 30%;
+      max-width: 280px; 
+    }  
+  
+    &__search-field {
+      height: $height-field;
+      width: 100%;
+      padding: 0 1rem;
+      background: $color-white;
+    }
+  
+    &__search-btn {
+      height: $height-field;
+      width: 3.8rem;
+      background: $color-white;
+      cursor: pointer;
+  
+      i {
+        font-size: $size-icon;
+        color: $color-dark-gray;
+        &:hover {
+          color: $color-blue;
+        }
+      }
+    } 
+  
+    &__mobile-menu-block {
+      display: none;
+    }
+  }
+  
+  .icons-block {
+    &__item:not(:last-child) {
+      margin-right: 4rem;
+    }
+  
+    &__link {
+        color: $color-white;
+        font-size: $size-icon;
+        transition: $links;
+        &:hover {
+          color: $color-yellow;
+      }
+    }
+  }

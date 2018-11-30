@@ -1,0 +1,165 @@
+.cards-block {
+    justify-content: space-around;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 2rem;
+  
+    &:nth-child(even) {
+      background: $color-light-gray;
+    }
+  
+    &:nth-child(odd) {
+      background: $color-white;
+    }  
+  
+    &__images {
+      position: relative;
+      width: 14rem;
+      // width: 25%;
+      // max-width: 14rem;
+    }
+  
+    &--winter::after {
+      @include tyre-season;
+      content: url('img/winter.svg');
+    }
+  
+    &--summer::after {
+      @include tyre-season;
+      content: url('img/summer.svg');
+    }
+  
+    &--all-season::after {
+      @include tyre-season;
+      content: url('img/all-season-2.svg');
+    }
+  
+    &--best-price::before {
+      content: url('img/badge-price-2.svg');
+      @include badge-properties;
+    }
+  
+    &--best-seller::before {
+      content: url('img/badge-seller-2.svg');
+      @include badge-properties;
+    }
+  
+    &--high-rate::before {
+      content: url('img/badge-rate-2.svg');
+      @include badge-properties;
+    }
+  
+    &__photo,
+    &__logo {  
+      width: 100%;
+      min-width: 14rem;
+    }
+  
+    &__description {
+      width: 50%;
+      min-width: 20rem;
+      margin: 0 2rem;
+    }
+  
+    &__links {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  
+    &__item {
+      @include bold-text;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      a {
+        color: $color-blue; // doesn't work in "&__item" block 
+      }
+    }
+  }
+  
+  .tyre-characteristics {
+    margin-top: 2rem;
+    &__link {
+      display: inline-block;
+      margin: 0 2rem;
+      position: relative;
+    }
+  
+    &__link:nth-child(1)::before {
+      content: url('img/1.svg');
+      @include icons-position;
+    }
+  
+    &__link:nth-child(2)::before {
+      content: url('img/2.svg');
+      @include icons-position;
+    }
+  
+    &__link:nth-child(3)::before {
+      content: url('img/3.svg');
+      @include icons-position;
+    }
+  }
+  
+  .cta-block {
+    width: 25%;
+    max-width: 28rem;  
+    // width: 28rem;
+    text-align: center;
+    &__price {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $color-blue;
+    }
+  
+    &__discount {
+      @include align-center;
+    }
+  
+    &__discount > span {
+      font-size: 1.6rem;
+      color: $color-dark-gray;
+    }
+  
+    &__discount > span:nth-child(2) {
+      padding: 0.5rem 2rem;
+      border: 1px solid $color-orange;
+      color: $color-orange;
+    }
+  
+    &__btn-offers {
+      @include btn($color-blue);
+      width: 100%;
+    }
+  
+    &__btn-cart {
+      @include btn($color-green);
+      width: 100%;
+    }
+  
+    button[class^="cta-block__btn"] {
+      margin-top: 2rem;
+    }
+  }
+  
+  .rate-block {
+    @include align-center;
+    &__stars {
+      display: inline-flex;
+    }
+  
+    &__star {
+      background-image: url('img/star.svg');
+      @include star-size;
+    }
+  
+    &__star-empty {
+      background-image: url('img/star-empty.svg');
+      @include star-size;
+    }
+  
+    li[class^="rate-block__star"] {
+      margin-right: 0.5rem;
+    }
+  }

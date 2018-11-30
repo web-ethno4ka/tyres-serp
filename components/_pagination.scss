@@ -1,0 +1,20 @@
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: 3rem 0;
+  
+    &__item {
+      padding: .5rem 1rem;
+      color: $color-dark-gray;
+      font-weight: 300; 
+  
+      &--active {
+        background-color: $color-blue;
+        color: $color-white;
+      }
+  
+      &:hover:not(&--active) {
+        @include hover-animation;
+      }
+    } 
+}

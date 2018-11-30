@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+    
+  body {
+    width: 100%;
+    font: 300 1.4rem Proxima Nova, sans-serif;
+    color: $color-dark-gray;
+  }
+  
+  h1 {
+    margin: 3rem 0;
+  }
+    
+  a {
+    text-decoration: none;
+    color: $color-dark-gray;
+  }
+    
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin-top: 2rem;
+  }
+  
+  input, select, button {
+    color: $color-dark-gray; 
+    border: none;
+    outline: none;
+  }
+  
+  a:hover,
+  button:hover,
+  select:hover {
+    cursor: pointer;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+  }

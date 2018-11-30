@@ -1,0 +1,30 @@
+.filter-block {
+    padding: 0 2rem;
+    color: $color-dark-gray;
+    background: $color-light-gray;
+    padding-bottom: 1rem;
+  
+    &__wrapper {
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 2rem 0;
+    }
+  
+    &__item {
+      display: flex;
+      flex-direction: column;
+  
+      .input-field--regular {
+        @include filter-field(25rem);
+      }
+  
+      .input-field--shorter {
+        @include filter-field(10rem);
+      }     
+    }
+  
+    &__btn {
+      @include btn($color-blue);
+      margin-bottom: 0;
+    }
+  }

@@ -1,0 +1,166 @@
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 0 4rem;
+    background: $color-light-gray;
+  
+    &__container {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+    }
+  
+    &__links-blocks {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 100%;
+      color: $color-white;
+    }
+  
+    &__socials-languages-block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 3rem 0;
+      width: 100%;
+    }
+  
+    &__socials-block {
+      display: flex;
+      justify-content: center;
+    }
+  
+    &__socials-item:not(:last-child) {
+      margin-right: 2rem;
+    }
+  
+    &__socials-link i {
+      font-size: 2rem;
+      color: $color-dark-gray;
+      display: inline-block;
+      transition: all .3s linear;
+  
+      &:hover {
+        color: $color-blue;
+      }
+    }
+  
+    &__languages-block {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  
+    &__languages-block li {
+      margin-right: 1rem;
+      margin-top: 0;
+    }
+  
+    &__languages-block li,
+    &__languages-block a {
+      height: 1.5rem;
+      display: block;
+    }
+  }
+  
+  .links-block {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 2rem;
+  }
+  
+  .links-block:not(:last-child) {
+    margin-right: 10rem;
+  }
+  
+  .links-block__item {
+    margin-top: 1.4rem;
+    font-weight: 300;
+  }
+  
+  .links-block__item a {
+    color: #3b3b3b;
+  }
+  
+  .links-block__item a:hover {
+    color: $color-blue;
+    transition: all .3s linear;
+  }
+  
+  .links-block__item b a{
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  #germ {
+    left: 0;
+    width: 2rem;
+    background: url('img/sprite_lang.png') 0 0;
+  }
+  
+  #fr {
+    left: 2.8rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -28px 0;
+  }
+  
+  #sw {
+    left: 5.5rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -55px 0;
+  }
+  
+  #se {
+    left: 8.2rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -82px 0;
+  }
+  
+  #it {
+    left: 10.9rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -109px 0;
+  }
+  
+  #no {
+    left: 13.6rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -136px 0;
+  }
+  
+  #dk {
+    left: 16.3rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -163px 0;
+  }
+  
+  #nl {
+    left: 19rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -190px 0;
+  }
+  
+  #uk {
+    left: 21.7rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -217px 0;
+  }
+  
+  #us {
+    left: 24.4rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -244px 0;
+  }
+  
+  #es {
+    left: 27.1rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -271px 0;
+  }
+  
+  #at {
+    left: 29.8rem;
+    width: 2rem;
+    background: url('img/sprite_lang.png') -298px 0;
+  }

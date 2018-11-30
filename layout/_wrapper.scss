@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: $color-white;
+  
+    &__container {
+      width: 100%;
+      max-width: 144rem;
+    }
+  }
