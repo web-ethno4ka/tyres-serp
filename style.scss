@@ -263,6 +263,24 @@
   .tags-block {
     justify-content: center;
   }
+  
+
+
+
+
+  .cards-block {
+    display: none;
+    &__images {
+      display: none;
+    }
+    &__photo {
+      width: 100%;
+      min-width: 6rem;
+    }
+  }
+
+
+  
 
   .footer {
     &__links-blocks {

@@ -1,5 +1,5 @@
-// MIXINS
-@mixin filter-field ($width-field) {
+
+  @mixin filter-field ($width-field) {
     width: $width-field;
     height: $height-field;
     padding: 0 1rem;
@@ -62,4 +62,36 @@
   @mixin hover-animation {
     background-color: $color-light-gray;
     color: $color-blue;
+  }
+
+  // MEDIA QUERIES
+
+  @mixin xs {
+    @media screen and (max-width: #{$screen-xs}) {
+      @content;
+    }
+  }
+
+  @mixin sm {
+    @media screen and (max-width: #{$screen-sm}) {
+      @content;
+    }
+  }
+
+  @mixin md {
+    @media screen and (max-width: #{$screen-md}) {
+      @content;
+    }
+  }
+
+  @mixin lg {
+    @media screen and (max-width: #{$screen-lg}) {
+      @content;
+    }
+  }
+
+  @mixin xl {
+    @media screen and (max-width: #{$screen-xl}) {
+      @content;
+    }
   }
