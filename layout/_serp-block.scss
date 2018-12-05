@@ -4,21 +4,42 @@
     padding: 0 2rem;
     color: $color-dark-gray;
     background: $color-white;
+    @include md {
+        flex-flow: column; 
+    }
+    @include optional {
+        padding: 1rem;
+    }
 }  
   
 .search-results-block {
     margin-left: 2rem;
     width: 110rem;
+    @include md {
+        margin-left: 0;
+    }
 }
 
 .tags-sorting-block {
     display: flex;
     justify-content: space-between;
+    @include md {
+        justify-content: flex-start;
+    }
 }
 
 .tags-block {
     display: flex;
     flex-flow: row wrap;
+    @include md {
+        max-width: 50vw;
+    }
+    @include optional {
+        max-width: 95vw;
+    }
+    @include xs {
+        justify-content: center;
+    }
 
     &__item {
         position: relative;
@@ -46,6 +67,12 @@
   
 .sorting-block {
     padding-right: 2rem;
+    @include md {
+        max-width: 50vw;
+    }
+    @include optional {
+        display: none;
+    }
 
     &__item {
       .input-field--shorter {

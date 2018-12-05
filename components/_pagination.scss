@@ -2,6 +2,10 @@
     display: flex;
     justify-content: flex-end;
     margin: 3rem 0;
+    @include md {
+      justify-content: center;
+      width: 95vw;
+    }
   
     &__item {
       padding: .5rem 1rem;

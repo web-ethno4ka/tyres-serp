@@ -95,3 +95,9 @@
       @content;
     }
   }
+
+  @mixin optional {
+    @media screen and (max-width: #{$screen}) {
+      @content;
+    }
+  }

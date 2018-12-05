@@ -3,6 +3,15 @@
     width: 100%;
     margin: 2rem 0;
     padding: 2rem;
+    @include md {
+      width: 95vw; 
+    }
+    @include optional {
+      flex-flow: column;
+      align-content: center;
+      max-width: 58rem;
+      min-width: 30rem;
+    }
   
     &:nth-child(even) {
       background: $color-light-gray;
@@ -17,6 +26,9 @@
       width: 14rem;
       // width: 25%;
       // max-width: 14rem;
+      @include optional {
+        margin: auto;
+      }
     }
   
     &--winter::after {
@@ -59,6 +71,12 @@
       width: 50%;
       min-width: 20rem;
       margin: 0 2rem;
+      @include optional {
+        margin: auto;
+        width: 80%;
+        min-width: 20rem;
+        margin-top: 2rem;
+      }
     }
   
     &__links {
@@ -80,6 +98,10 @@
   
   .tyre-characteristics {
     margin-top: 2rem;
+    @include optional {
+      display: flex;
+      justify-content: center;
+    }
     &__link {
       display: inline-block;
       margin: 0 2rem;
@@ -107,6 +129,12 @@
     max-width: 28rem;  
     // width: 28rem;
     text-align: center;
+    @include optional {
+      margin: auto;
+      width: 80%;
+      min-width: 20rem;
+      margin-top: 2rem;
+    }
     &__price {
       font-size: 2rem;
       font-weight: 600;
