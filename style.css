@@ -1,62 +1,16 @@
 @media screen and (max-width: 600px) {
-  .header,
-  .serp-block {
-    padding: 1rem;
-  }
-  .aside-filter__btn {
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-  }
-  .sidebar-filter {
-    display: none;
-  }
-  .sorting-block {
-    display: none;
-  }
-  .tags-block {
-    max-width: 95vw;
-  }
   .cards-block {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    max-width: 58rem;
-    min-width: 30rem;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
   }
-  .cards-block__images, .cards-block__description,
-  .cards-block .cta-block {
-    margin: auto;
+  .cards-block__images {
+    width: 10rem;
   }
-  .cards-block__description,
-  .cards-block .cta-block {
-    width: 80%;
-    min-width: 20rem;
-    margin-top: 2rem;
+  .cards-block__photo {
+    width: 100%;
+    min-width: 5rem;
   }
-  .tyre-characteristics {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.cards-block {
-  display: none;
-}
-
-.cards-block__images {
-  display: none;
-}
-
-.cards-block__photo {
-  width: 100%;
-  min-width: 6rem;
 }
 /*# sourceMappingURL=style.css.map */

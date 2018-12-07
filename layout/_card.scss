@@ -6,12 +6,6 @@
     @include md {
       width: 95vw; 
     }
-    @include optional {
-      flex-flow: column;
-      align-content: center;
-      max-width: 58rem;
-      min-width: 30rem;
-    }
   
     &:nth-child(even) {
       background: $color-light-gray;
@@ -49,33 +43,42 @@
     &--best-price::before {
       content: url('img/badge-price-2.svg');
       @include badge-properties;
+      @include optional {
+        display: none;
+      }
     }
   
     &--best-seller::before {
       content: url('img/badge-seller-2.svg');
       @include badge-properties;
+      @include optional {
+        display: none;
+      }
     }
   
     &--high-rate::before {
       content: url('img/badge-rate-2.svg');
       @include badge-properties;
+      @include optional {
+        display: none;
+      }
     }
   
     &__photo,
     &__logo {  
       width: 100%;
-      min-width: 14rem;
+      min-width: 8rem;
     }
   
     &__description {
       width: 50%;
-      min-width: 20rem;
+      min-width: 15rem;
       margin: 0 2rem;
       @include optional {
         margin: auto;
-        width: 80%;
-        min-width: 20rem;
-        margin-top: 2rem;
+        width: 50%;
+        min-width: 15rem;
+        margin-top: 1rem;
       }
     }
   
@@ -83,6 +86,9 @@
       display: flex;
       flex-direction: column;
       margin-top: 2rem;
+      @include optional {
+        display: none;
+      }
     }
   
     &__item {
@@ -131,8 +137,7 @@
     text-align: center;
     @include optional {
       margin: auto;
-      width: 80%;
-      min-width: 20rem;
+      min-width: 10rem;
       margin-top: 2rem;
     }
     &__price {
@@ -190,4 +195,24 @@
     li[class^="rate-block__star"] {
       margin-right: 0.5rem;
     }
+
+    &__description {
+      @include optional {
+        display: none;
+      }
+    }
   }
+
+
+
+
+  
+
+  .description-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include optional {
+    display: flex;
+    flex-direction: column;
+  }
+}
