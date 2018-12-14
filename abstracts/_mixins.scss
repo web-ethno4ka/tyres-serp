@@ -20,6 +20,21 @@
       cursor: pointer;
     }
   }
+
+  @mixin btn-border ($color-btn) {
+    width: 28rem;
+    height: $height-field;
+    font: 200 1.6rem Proxima Nova;
+    letter-spacing: .6px;
+    color: $color-white;
+    background: $color-btn;
+    transition: $links;
+  
+    &:hover {
+      background: lighten($color-btn, 8%);
+      cursor: pointer;
+    }
+  }
   
   @mixin tyre-season {
     position: absolute; 

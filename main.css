@@ -1030,6 +1030,16 @@ input[type="checkbox"]:checked:after {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .cards-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 0;
+  }
+}
+
 .cards-block:nth-child(even) {
   background: #f8f8f8;
 }
@@ -1120,6 +1130,24 @@ input[type="checkbox"]:checked:after {
   min-width: 8rem;
 }
 
+.cards-block__photo-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .cards-block__photo-mobile {
+    display: block;
+    width: 100%;
+    min-width: 8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cards-block__photo {
+    display: none;
+  }
+}
+
 .cards-block__description {
   width: 50%;
   min-width: 15rem;
@@ -1132,6 +1160,16 @@ input[type="checkbox"]:checked:after {
     width: 50%;
     min-width: 15rem;
     margin-top: 1rem;
+  }
+  .cards-block__description h2, .cards-block__description h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cards-block__description {
+    width: 100%;
   }
 }
 
@@ -1146,7 +1184,7 @@ input[type="checkbox"]:checked:after {
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .cards-block__links {
     display: none;
   }
@@ -1180,6 +1218,12 @@ input[type="checkbox"]:checked:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tyre-characteristics {
+    display: none;
   }
 }
 
@@ -1224,10 +1268,23 @@ input[type="checkbox"]:checked:after {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .cta-block {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
 .cta-block__price {
   font-size: 2rem;
   font-weight: 600;
   color: #0055a0;
+}
+
+@media screen and (max-width: 400px) {
+  .cta-block__price {
+    display: block;
+  }
 }
 
 .cta-block__discount {
@@ -1240,6 +1297,12 @@ input[type="checkbox"]:checked:after {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .cta-block__discount {
+    display: none;
+  }
 }
 
 .cta-block__discount > span {
@@ -1259,15 +1322,21 @@ input[type="checkbox"]:checked:after {
   font: 200 1.6rem Proxima Nova;
   letter-spacing: .6px;
   color: #fff;
-  background: #0055a0;
+  background: #ababab;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
 }
 
 .cta-block__btn-offers:hover {
-  background: #006bc9;
+  background: #bfbfbf;
   cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .cta-block__btn-offers {
+    width: 45%;
+  }
 }
 
 .cta-block__btn-cart {
@@ -1287,8 +1356,21 @@ input[type="checkbox"]:checked:after {
   cursor: pointer;
 }
 
+@media screen and (max-width: 400px) {
+  .cta-block__btn-cart {
+    width: 45%;
+  }
+}
+
 .cta-block button[class^="cta-block__btn"] {
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .cta-block button[class^="cta-block__btn"] {
+    display: inline-block;
+    margin-top: 1rem;
+  }
 }
 
 .rate-block {
@@ -1333,24 +1415,9 @@ input[type="checkbox"]:checked:after {
   }
 }
 
-.description-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 600px) {
-  .description-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media screen and (max-width: 400px) {
+  .rate-block {
+    display: none;
   }
 }
 
